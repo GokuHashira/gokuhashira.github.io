@@ -57,8 +57,8 @@ export const STUDIES = [
     institution: 'Indian Institute of Technology, Guwahati',
     link: 'https://masaischool.com/mc-iitg-cs',
     date: '2024 -2025',
-    start: 'Apr 2025',
-    end: 'Apr 2025',
+    start: 'Jun 2024',
+    end: 'Jun 2025',
     details:[
       'Relevant Coursework: Mathematics for Computer Science, Introduction to Computer Science and Programming, Data Structure and Algorithms, Database Systems'
     ]
@@ -68,8 +68,8 @@ export const STUDIES = [
     institution: 'National Institute of Technology, Rourkela',
     link: 'https://www.nitrkl.ac.in/',
     date: '2018 - 2022',
-    start: 'Apr 2025',
-    end: 'Apr 2025',
+    start: 'Jun 2018',
+    end: 'Jun 2022',
     details:[
       'Relevant Coursework: Mathematics I, II (ODEs, Matrix Theory, Vector & Differential Calculus), Basic programming in C, Chemical Engineering Mathematics, Numerical Analysis'
     ]
