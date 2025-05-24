@@ -148,16 +148,14 @@ export const EXPERIENCE = [
     ],
   },
   {
-    company: 'BOOKII',
-    location: 'Bogotá D C, Colombia',
-    position: 'Software developer',
-    start: '2019',
-    end: '2021',
+    company: 'Indian Space Research Organisation',
+    location: 'WFH',
+    position: 'Deep Learning Intern',
+    start: 'Jun 2020',
+    end: 'Feb 2021',
+    link: 'https://www.isro.gov.in/Training.html',
     tasks: [
-      'Productive collaborationwiththebackendteamforthecreationofthe conversationalclubs',
-      'Effective coding of conversational clubs following design guide lines and using the Redux statemanager',
-      'Creation of the Bookii page in Spanish and change of texts in cms',
-      'Generation of static posts using Gatsby and the Contentful cms for the Bookii blog',
+      'Used U-Net to build an image segmentation model to detect the land use and land cover of a region using satellite images.',
     ],
   },
 ]
