@@ -1,0 +1,59 @@
+---
+import { CERT } from '../lib/constants'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import TopLayout from '../layouts/TopLayout.astro'
+import BottomLayout from '../layouts/BottomLayout.astro'
+
+import { CERTIFICATIONS } from '../lib/constants'
+---
+
+<BaseLayout title={CERT.TITLE} description={CERT.DESCRIPTION}>
+  <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="fade">
+    <TopLayout>
+      <h2
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+      >
+        {CERT.TITLE}
+      </h2>
+    </TopLayout>
+    <BottomLayout>
+      <ul>
+        {
+          CERTIFICATIONS.map((entry) => (
+            <li class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25">
+              <div class="mb-4 text-sm uppercase">
+                {entry.date}
+              </div>
+              {entry?.url ? (
+                <a
+                  href={entry.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-semibold text-primary hover:underline"
+                >
+                  {entry.title}
+                </a>
+              ) : (
+                <span class="font-semibold text-foreground">
+                  {entry.title}
+                </span>
+              )}
+              <div class="text-sm font-light text-muted-foreground mt-2">
+                {entry.issuer}
+              </div>
+              {/* Uncomment if you want to show details
+              <article class="prose dark:prose-invert mt-3">
+                <ul class="list-disc ml-5">
+                  {entry.details?.map((detail) => (
+                    <li>{detail}</li>
+                  ))}
+                </ul>
+              </article>
+              */}
+            </li>
+          ))
+        }
+      </ul>
+    </BottomLayout>
+  </main>
+</BaseLayout>
