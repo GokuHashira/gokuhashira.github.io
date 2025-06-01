@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://gokuhashira.github.io',
-  base: process.env.CI ? '/gokul-astro-project' : '/',  // Use base only in production
+  base: '/', // No subdirectory needed for username.github.io repos
   integrations: [react(), tailwind({
     applyBaseStyles: false
   })]
