@@ -4,11 +4,6 @@
 
 This template helps you build a portfolio using Astro, Tailwind CSS, and Shadcn UI.
 
-## Design
-
-![View 1](public/View1.png)
-![View 2](public/View2.png)
-
 ## Inspiration
 
 This project was inspired by several outstanding portfolios. Here are some that served as references:
@@ -16,6 +11,7 @@ This project was inspired by several outstanding portfolios. Here are some that 
 - [Gianmarco Portfolio](https://gianmarco.xyz/)
 - [Vitesse Portfolio](https://astro-theme-vitesse.netlify.app/)
 - [Gurido Portfolio](https://gurido.vercel.app/)
+- [BUE221 Portfolio](https://bue221.vercel.app/)
 
 ## Technologies Used
 
@@ -40,7 +36,7 @@ To install and run the project locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/bue221/astro-portfolio.git
+   git clone https://github.com/GokuHashira/gokul-astro-project
    ```
 
 2. Navigate to the project directory:
@@ -65,7 +61,7 @@ To install and run the project locally, follow these steps:
    yarn dev
    ```
 
-5. Open your browser and visit `http://localhost:3000` to see your portfolio in action.
+5. Open your browser and visit `http://localhost:4321` to see your portfolio in action.
 
 ## Project Structure
 
