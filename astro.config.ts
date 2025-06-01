@@ -5,7 +5,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.CI ? 'https://astro-shadcn-ui-template.vercel.app' : 'http://localhost:4321',
+  site: process.env.CI ? 'https://gokuhashira.github.io' : 'http://localhost:4321',
+   base: process.env.CI ? '/gokul-astro-project' : '',
   integrations: [react(), tailwind({
     applyBaseStyles: false
   })]

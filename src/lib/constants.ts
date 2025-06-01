@@ -596,3 +596,54 @@ export const PROJECTS_LIST = [
     image: 'public/used_car.jpg',
   }
 ]
+
+export const SKILLS = [
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/QD4PAMMMFUFX",
+    skill: "Python",
+  },
+  {
+    link:"https://drive.google.com/file/d/1EVPHWUTToqSwb5pwx0mWXwAwji-p5FpX/view?usp=sharing",
+    skill: "C++",
+  },
+  {
+    link:"https://learn.deeplearning.ai/accomplishments/1cfdf90c-b92c-4fa0-8405-4f43794dc6a8",
+    skill: "Langchain",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/DGQNJVJKGWMU",
+    skill: "Tensorflow",
+  },
+  {
+    link:"",
+    skill: "Pytorch",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/WJBMNXBG4YBE",
+    skill: "Machine Learning",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
+    skill: "Large Learning Models",
+  },
+  {
+    link:"",
+    skill: "AI",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
+    skill: "AWS",
+  },
+  {
+    link:"https://www.credly.com/badges/125d592d-4b4f-434b-8120-7271ce0e05ca",
+    skill: "Azure",
+  },
+  {
+    link:"",
+    skill: "Docker",
+  },
+  {
+    link:"",
+    skill: "Github Actions",
+  }
+]
