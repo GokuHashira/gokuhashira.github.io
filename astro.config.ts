@@ -6,7 +6,8 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.CI ? 'https://gokuhashira.github.io' : 'http://localhost:4321',
-  base: process.env.CI ? '/gokul-astro-project' : '',
+  // base: process.env.CI ? '/gokul-astro-project' : '/',
+  base: '/gokul-astro-project',
   integrations: [react(), tailwind({
     applyBaseStyles: false
   })]
