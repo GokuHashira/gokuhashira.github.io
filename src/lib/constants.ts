@@ -565,35 +565,35 @@ export const PROJECTS_LIST = [
     description: 'Aims on building a LLM that is task specific and helpful in QnA based tasks.',
     link: 'https://github.com/GokuHashira/InstructionLLM-QnA',
     alttext: 'InstructionLLM-QnA',
-    image: 'public/InstructionQA.png',
+    image: `${import.meta.env.BASE_URL}InstructionQA.png`,
   },
   {
     title: 'NITRKL Syllabus bot',
     description: 'A chatbot-project based on RASA and Python to showcase the syllabus and recommended books for various subjects taught at NITR.',
     link: 'https://github.com/GokulParzival/nitrkl-syllabus-bot/blob/main/README.md',
     alttext: 'NITRKL Syllabus bot',
-    image: 'public/nitri_logo.png',
+    image: `${import.meta.env.BASE_URL}nitri_logo.png`,
   },
   {
     title: 'Detecting the best waterfall spot in TamilNadu to set up a restuarant',
     description: 'This project involves assisting a business person or a restaurant chain to find the most potential place to set up a new restaurant or branch, respectively, near any waterfall in Tamilnadu.',
     link: 'https://github.com/GokulParzival/Detecting-the-best-waterfalls-spot-in-Tamilnadu-to-set-up-a-restaurant/blob/main/Detecting%20the%20best%20waterfalls%20spot%20in%20Tamilnadu%20to%20set%20up%20a%20restaurant.ipynb',
     alttext: 'Detecting the best waterfall spot in TamilNadu to set up a restuarant',
-    image: 'public/Map.png',
+    image: `${import.meta.env.BASE_URL}Map.png`,
   },
   {
     title: 'Exploratory Data Analysis on Student Performances',
     description: "This project involves an in-depth analysis of the student's performances based on various factors that include Gender, Ethnicity, Parental level of education, Lunch and Test preparation course.",
     link: 'https://github.com/GokulParzival/Mini-Project-on-Data-Visualization/blob/master/Data%20Science%20Mini%20Project.ipynb',
     alttext: 'Exploratory Data Analysis on Student Performances',
-    image: 'public/data_analyst.jpg',
+    image: `${import.meta.env.BASE_URL}data_analyst.jpg`,
   },
   {
     title: 'Price Estimation of Used Cars',
     description: 'Prediction of the price of used cars based on attributes like location, lifetime etc. and training them on basic ML models.',
     link: 'https://github.com/GokulParzival/Price-Estimation-of-Used-Cars',
     alttext: 'Price Estimation of Used Cars',
-    image: 'public/used_car.jpg',
+    image: `${import.meta.env.BASE_URL}used_car.jpg`,
   }
 ]
 
