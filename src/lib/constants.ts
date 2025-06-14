@@ -169,6 +169,12 @@ export const EXPERIENCE = [
 export const CERTIFICATIONS = [
   {
     date: "May 2025",
+    title: "Generative AI: Math Foundations to Multimodal Modeling",
+    url: `${import.meta.env.BASE_URL}AUKBC_Certificate.pdf`,
+    issuer: "AUKBC MIT",
+  },
+  {
+    date: "May 2025",
     title: "Introduction to Large Language Models",
     url: "https://drive.google.com/file/d/1SPB-V_9xNpuNfzv6QOg4xBX4EU_G_jLB/view?usp=sharing",
     issuer: "NPTEL",
