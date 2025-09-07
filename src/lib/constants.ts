@@ -59,6 +59,17 @@ export const SEARCH: Page = {
 // Study Page
 export const STUDIES = [
   {
+    title: 'Masters in Applied Machine Learning',
+    institution: 'University of Maryland College Park',
+    link: 'https://cmns.umd.edu/graduate/science-academy/machine-learning',
+    date: '2025 -2026',
+    start: 'Aug 2025',
+    end: 'Dec 2026',
+    details:[
+      'Relevant Coursework: Probability and Statistics, Principles of Data Science, Principles of Machine Learning'
+    ]
+  },
+  {
     title: 'Micro-Credit Program in Computer Science',
     institution: 'Indian Institute of Technology, Guwahati',
     link: 'https://masaischool.com/mc-iitg-cs',
@@ -89,7 +100,7 @@ export const EXPERIENCE = [
     position: 'AI Engineer',
     start: 'Apr 2025',
     link: 'https://cerai.iitm.ac.in/',
-    end: 'Current',
+    end: 'Aug 2025',
     tasks: [
       'Developing an Evaluation Framework for Indian Conversational AI Systems',
     ],
@@ -621,10 +632,6 @@ export const SKILLS = [
     skill: "Tensorflow",
   },
   {
-    link:"",
-    skill: "Pytorch",
-  },
-  {
     link:"https://www.coursera.org/account/accomplishments/certificate/WJBMNXBG4YBE",
     skill: "Machine Learning",
   },
@@ -633,8 +640,8 @@ export const SKILLS = [
     skill: "Large Learning Models",
   },
   {
-    link:"",
-    skill: "AI",
+    link:`${import.meta.env.BASE_URL}AUKBC_Certificate.pdf`,
+    skill: "Geenrative AI",
   },
   {
     link:"https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
@@ -649,7 +656,15 @@ export const SKILLS = [
     skill: "Docker",
   },
   {
+    link:"https://www.coursera.org/account/accomplishments/certificate/S8XQTRJGA86K",
+    skill: "Git",
+  },
+  {
     link:"",
     skill: "Github Actions",
+  },
+  {
+    link:"",
+    skill: "DevOps",
   }
 ]

@@ -40,7 +40,7 @@ import Skills from '../components/sections/Skills.astro'
 
 <BaseLayout
   title="Gokulakannan S - AI Engineer"
-  description="Gokulakannan S - AI Engineer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Study"
+  description="Gokulakannan S - AI Engineer"
 >
   <div
     slot="loader"
@@ -53,18 +53,9 @@ import Skills from '../components/sections/Skills.astro'
     <IntroCard />
     <AboutMe />
     <CVCard />
-    <Now />
-    <ExperienceCard />
-    <StudyCard />
-    <Certificates />
-    <Card
-      colSpan="md:col-span-1"
-      rowSpan="md:row-span-1"
-      title="Portfolio & Projects"
-      href="/portfolio"
-    />
-    <TimeZoneCard />
     <Skills />
+    <ExperienceCard />
+    <Now />
     <ContactsCard />
     <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <div class="flex h-full flex-col justify-between">
@@ -74,5 +65,14 @@ import Skills from '../components/sections/Skills.astro'
         <p class="mt-2 text-xs">- Paulo Coelho, The Alchemist</p>
       </div>
     </Card>
+    <TimeZoneCard />
+    <StudyCard />
+    <Certificates />
+    <Card
+      colSpan="md:col-span-1"
+      rowSpan="md:row-span-1"
+      title="Portfolio & Projects"
+      href="/portfolio"
+    />
   </main>
 </BaseLayout>
