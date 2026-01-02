@@ -22,7 +22,7 @@ export const SITE: Site = {
 
 // Work Page
 export const WORK: Page = {
-  TITLE: 'Work',
+  TITLE: 'Experience',
   DESCRIPTION: '💼My Research and Professional Experiences.',
 }
 
@@ -95,6 +95,17 @@ export const STUDIES = [
 
 export const EXPERIENCE = [
   {
+    company: 'Institute for Physical Science and Technology, UMD',
+    location: 'College Park, USA',
+    position: 'Graduate Student Assistance',
+    start: 'Oct 2025',
+    link: 'https://sites.google.com/site/pratyushtiwary/',
+    end: 'Ongoing',
+    tasks: [
+      'Working on AI for RNAs',
+    ],
+  },
+  {
     company: 'Centre for Responsible AI, Indian Institute of Technology, Madras',
     location: 'Chennai, India',
     position: 'AI Engineer',
@@ -102,7 +113,10 @@ export const EXPERIENCE = [
     link: 'https://cerai.iitm.ac.in/',
     end: 'Aug 2025',
     tasks: [
-      'Developing an Evaluation Framework for Indian Conversational AI Systems',
+      'Led development of "Evaluation Framework for Indian Conversational AI Applications" funded by Bill and Melinda Gates Foundation, creating the first comprehensive evaluation pipeline specifically tailored for Indian language contexts covering 100+ metrics across safety, performance, and cultural dimensions.',
+      'Worked under the supervision of Sudarsun Santhiappan and collaborated with AI4Bharat for development of the framework.',
+      'Designed and implemented a scalable hybrid evaluation architecture by analyzing 15+ existing frameworks and developing modular strategies that combine deterministic algorithms with LLM-as-judge approaches for superior evaluation coverage',
+      'Presented research findings at WSAI Annual Research Showcase 2025',
     ],
   },
   {
@@ -178,6 +192,12 @@ export const EXPERIENCE = [
 ]
 
 export const CERTIFICATIONS = [
+  {
+    date: "Nov 2025",
+    title: "Technica 2025: The First Light: Best Startup Track Hack Winner",
+    url: `https://devpost.com/software/majka`,
+    issuer: "Technica",
+  },
   {
     date: "May 2025",
     title: "Generative AI: Math Foundations to Multimodal Modeling",
@@ -577,6 +597,20 @@ export const CERTIFICATIONS = [
 ]
 
 export const PROJECTS_LIST = [
+  {
+    title: 'Majka',
+    description: 'Majka is a full-stack companion app that helps new mothers rebuild strength, track their intake answers, and receive AI-assisted guidance.',
+    link: 'https://github.com/nydhy/majka',
+    alttext: 'Majka - Postpartum Companion',
+    image: `${import.meta.env.BASE_URL}Majka.png`,
+  },
+  {
+    title: 'SplitSmart',
+    description: 'An application which helps you keep track of your expenses through Natural Language',
+    link: 'https://github.com/GokuHashira/GeminiHack',
+    alttext: 'SplitSmart',
+    image: `${import.meta.env.BASE_URL}SmartSplit.png`,
+  },
   {
     title: 'InstructionLLM-QnA',
     description: 'Aims on building a LLM that is task specific and helpful in QnA based tasks.',
