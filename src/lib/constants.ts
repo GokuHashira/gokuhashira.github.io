@@ -605,11 +605,25 @@ export const PROJECTS_LIST = [
     image: `${import.meta.env.BASE_URL}Majka.png`,
   },
   {
+    title: 'Song Mood Detection using Spotify Dataset',
+    description: 'The project is all about using the music characteristics to determine the mood of the songs.',
+    link: 'https://github.com/GokuHashira/SpotifyProject',
+    alttext: 'SongMoodDetection',
+    image: `${import.meta.env.BASE_URL}SongMoodDetection.png`,
+  },
+  {
     title: 'SplitSmart',
     description: 'An application which helps you keep track of your expenses through Natural Language',
     link: 'https://github.com/GokuHashira/GeminiHack',
     alttext: 'SplitSmart',
     image: `${import.meta.env.BASE_URL}SmartSplit.png`,
+  },
+  {
+    title: 'AIEvaluationTool',
+    description: 'AIEvaluationTool is a comprehensive, end-to-end framework designed to automate the evaluation of Indian Conversational AI systems.',
+    link: 'https://github.com/cerai-iitm/AIEvaluationTool',
+    alttext: 'AIEvaluationTool',
+    image: `${import.meta.env.BASE_URL}Arch.jpg`,
   },
   {
     title: 'InstructionLLM-QnA',
