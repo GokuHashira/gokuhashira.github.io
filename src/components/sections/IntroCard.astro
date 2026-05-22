@@ -6,29 +6,29 @@ import { Linkedin, Github, Mail } from 'lucide-react'
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-1">
-  <div class="flex h-full w-full">
-    <div class="flex flex-col justify-between gap-4 md:max-h-[300px]">
-      <div class="flex h-full flex-col">
+  <div class="flex h-full w-full flex-col gap-6 md:flex-row md:items-start">
+    <div class="flex min-w-0 flex-1 flex-col gap-5">
+      <div class="flex flex-col">
         <h6 class="m-0 text-sm font-light text-gray-500">Welcome</h6>
-        <p class="m-0 text-xl font-light">
+        <p class="m-0 text-xl font-light leading-relaxed">
           Hi, I'm <b class="font-bold">Gokulakannan Sakthivel (Gokul)</b>. I focus on building useful and impactful AI systems that translate research into real-world applications. Previously, I’ve worked as an <b class="font-bold">Applied AI and Cloud Engineer</b>, developing NLP-based solutions for industry and research. I’m currently pursuing my <b class="font-bold">Master’s in Applied Machine Learning at the University of Maryland</b> and working with <b class="font-bold">Prof. Pratyush Tiwary</b> on RNA foundation language models. 🧬
         </p>
       </div>
-      <div class="flex gap-4">
+      <div class="flex flex-wrap gap-4">
         <a href={LINKS.github} aria-label="github profile" target="_blank">
-          <Button aria-label="github profile">
+          <Button aria-label="github profile" size="icon">
             <Github />
             <span class="sr-only">GitHub Profile</span>
           </Button>
         </a>
         <a href={LINKS.linkedin} aria-label="linkedin profile" target="_blank">
-          <Button aria-label="linkedin profile">
+          <Button aria-label="linkedin profile" size="icon">
             <Linkedin />
             <span class="sr-only">Linkedin Profile</span>
           </Button>
         </a>
         <a href={LINKS.mail} aria-label="mail profile" target="_blank">
-          <Button>
+          <Button size="icon">
             <Mail />
             <span class="sr-only">Email contact</span>
           </Button>
@@ -39,7 +39,7 @@ import { Linkedin, Github, Mail } from 'lucide-react'
       width="200"
       height="200"
       src=`/Gokul_latest.jpg`
-      class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+      class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:flex-none md:opacity-100"
       alt="Gokul"
     />
   </div>
