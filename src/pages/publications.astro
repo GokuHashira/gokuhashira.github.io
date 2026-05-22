@@ -1,0 +1,47 @@
+---
+import { PUBS, PUBLICATIONS } from '../lib/constants'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import TopLayout from '../layouts/TopLayout.astro'
+import BottomLayout from '../layouts/BottomLayout.astro'
+---
+
+<BaseLayout title={PUBS.TITLE} description={PUBS.DESCRIPTION}>
+  <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="fade">
+    <TopLayout>
+      <h2
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+      >
+        {PUBS.TITLE}
+      </h2>
+    </TopLayout>
+    <BottomLayout>
+      <ul>
+        {
+          PUBLICATIONS.map((entry) => (
+            <li class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25">
+              <div class="mb-4 text-sm uppercase">
+                {entry.date}
+              </div>
+              <a
+                href={entry.url ?? ''}
+                target="_blank"
+                rel="noopener noreferrer"
+                class={`font-semibold ${entry?.url ? 'text-primary hover:underline' : 'text-foreground'}`}
+              >
+                {entry.title}
+              </a>
+              <div class="mt-2 text-sm font-light text-muted-foreground">
+                {entry.venue}
+              </div>
+              {entry.summary && (
+                <p class="mt-4 text-sm leading-6 text-muted-foreground">
+                  {entry.summary}
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </BottomLayout>
+  </main>
+</BaseLayout>

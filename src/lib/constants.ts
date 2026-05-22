@@ -23,7 +23,7 @@ export const SITE: Site = {
 // Work Page
 export const WORK: Page = {
   TITLE: 'Experience',
-  DESCRIPTION: '💼My Research and Professional Experiences.',
+  DESCRIPTION: '💼 My research and professional experience.',
 }
 
 // Education Page
@@ -34,8 +34,14 @@ export const EDUC: Page = {
 
 // Certifications Page
 export const CERT: Page = {
-  TITLE: 'Certifications',
+  TITLE: 'Awards & Certifications',
   DESCRIPTION: '🥇My achievements!',
+}
+
+// Publications Page
+export const PUBS: Page = {
+  TITLE: 'Publications',
+  DESCRIPTION: 'My research publications',
 }
 
 // Blog Page
@@ -56,13 +62,25 @@ export const SEARCH: Page = {
   DESCRIPTION: 'Search all posts and projects by keyword.',
 }
 
+export const PUBLICATIONS = [
+  {
+    title: 'Detecting and quantifying overparametrization in RNA language models with REDIAL',
+    venue: 'bioRxiv',
+    url: 'https://www.biorxiv.org/content/10.64898/2026.05.11.724344v1',
+    date: 'May 2026',
+    summary:
+      'RNA foundation models are increasingly used for structure prediction and design, but downstream benchmarks can blur genuine biological learning with task-specific memorization. REDIAL addresses this with a zero-shot, unsupervised diagnostic that extracts coevolutionary signals directly from RNA language model embeddings. By probing models layer by layer, it reveals what they have internalized about RNA structure, showing that current RNA LMs are often overparameterized for available sequence diversity while structure-guided pretraining improves learned base-pair coupling signals.',
+  },
+  // add more...
+]
+
 // Study Page
 export const STUDIES = [
   {
-    title: 'Masters in Applied Machine Learning',
-    institution: 'University of Maryland College Park',
+    title: "Master's in Applied Machine Learning",
+    institution: 'University of Maryland, College Park',
     link: 'https://cmns.umd.edu/graduate/science-academy/machine-learning',
-    date: '2025 -2026',
+    date: '2025 - 2026',
     start: 'Aug 2025',
     end: 'Dec 2026',
     details:[
@@ -70,25 +88,14 @@ export const STUDIES = [
     ]
   },
   {
-    title: 'Micro-Credit Program in Computer Science',
-    institution: 'Indian Institute of Technology, Guwahati',
-    link: 'https://masaischool.com/mc-iitg-cs',
-    date: '2024 -2025',
-    start: 'Jun 2024',
-    end: 'Jun 2025',
-    details:[
-      'Relevant Coursework: Mathematics for Computer Science, Introduction to Computer Science and Programming, Data Structure and Algorithms, Database Systems'
-    ]
-  },
-  {
-    title: 'BTech in Chemical Engineering',
+    title: 'B.Tech. in Chemical Engineering',
     institution: 'National Institute of Technology, Rourkela',
     link: 'https://www.nitrkl.ac.in/',
     date: '2018 - 2022',
     start: 'Jun 2018',
     end: 'Jun 2022',
     details:[
-      'Relevant Coursework: Mathematics I, II (ODEs, Matrix Theory, Vector & Differential Calculus), Basic programming in C, Chemical Engineering Mathematics, Numerical Analysis'
+      'Relevant Coursework: Mathematics I, II (ODEs, Matrix Theory, Vector and Differential Calculus), basic programming in C, Chemical Engineering Mathematics, Numerical Analysis'
     ]
   }
 ]
@@ -97,12 +104,12 @@ export const EXPERIENCE = [
   {
     company: 'Institute for Physical Science and Technology, UMD',
     location: 'College Park, USA',
-    position: 'Graduate Student Assistance',
+    position: 'Graduate Student Assistant',
     start: 'Oct 2025',
-    link: 'https://sites.google.com/site/pratyushtiwary/',
+    link: 'https://sites.google.com/site/pratyushtiwary/group#h.p_FymIi7P6-8JC',
     end: 'Ongoing',
     tasks: [
-      'Working on AI for RNAs',
+      'Working on AI for RNA.',
     ],
   },
   {
@@ -115,8 +122,8 @@ export const EXPERIENCE = [
     tasks: [
       'Led development of "Evaluation Framework for Indian Conversational AI Applications" funded by Bill and Melinda Gates Foundation, creating the first comprehensive evaluation pipeline specifically tailored for Indian language contexts covering 100+ metrics across safety, performance, and cultural dimensions.',
       'Worked under the supervision of Sudarsun Santhiappan and collaborated with AI4Bharat for development of the framework.',
-      'Designed and implemented a scalable hybrid evaluation architecture by analyzing 15+ existing frameworks and developing modular strategies that combine deterministic algorithms with LLM-as-judge approaches for superior evaluation coverage',
-      'Presented research findings at WSAI Annual Research Showcase 2025',
+      'Designed and implemented a scalable hybrid evaluation architecture by analyzing 15+ existing frameworks and developing modular strategies that combine deterministic algorithms with LLM-as-judge approaches for superior evaluation coverage.',
+      'Presented research findings at WSAI Annual Research Showcase 2025.',
     ],
   },
   {
@@ -127,9 +134,9 @@ export const EXPERIENCE = [
     start: 'Jan 2025',
     end: 'Mar 2025',
     tasks: [
-      'Built induvidual document processing pipelines',
-      'Developed RAG based solutions',
-      'Integrated the solutions using LangChain, FastAPI, AWS and Docker',
+      'Built individual document processing pipelines.',
+      'Developed RAG-based solutions.',
+      'Integrated the solutions using LangChain, FastAPI, AWS, and Docker.',
     ],
   },
   {
@@ -140,9 +147,9 @@ export const EXPERIENCE = [
     start: 'Jul 2022',
     end: 'Jan 2025',
     tasks: [
-      'Worked as an ML Engineer leading the development of AWS CI/CD pipelines for an internal chatbot, earning multiple accolades; singlehandedly built an Azure-based chatbot in collaboration with Microsoft, receiving high praise from U.S. leadership—contributions culminated in a promotion to Senior ML Engineer.',
-      'Switched roles to work as a Machine Learning Engineer for the Generative AI Team at Eli Lilly, where I assisted in building RAG-based infrastructure and LLMOps in AWS; later promoted to Engineer-I in March 2024 for leading backend development of inference and indexing pipelines, delivering full ML architectures with CI/CD, deploying multiple production applications, and improving RAG efficiency—recognized with two RISE Awards for timely execution and cross-functional collaboration across AWS, Azure, and Generative AI initiatives.',
-      'Joined as an Azure Foundational Cloud Engineer, where I managed Azure infrastructure, contributed to CI/CD transitions using GitHub Actions, developed reusable Azure Bicep modules, collaborated across teams to enhance customer experience, and maintained comprehensive documentation—achievements included securing runner-up in a Generative AI Hackathon, automating JIRA–ServiceNow integration, and completing the Azure Fundamentals Certification.',
+      'Worked as an ML Engineer leading the development of AWS CI/CD pipelines for an internal chatbot, earning multiple accolades; singlehandedly built an Azure-based chatbot in collaboration with Microsoft, receiving high praise from U.S. leadership. Contributions culminated in a promotion to Senior ML Engineer.',
+      'Switched roles to work as a Machine Learning Engineer for the Generative AI Team at Eli Lilly, where I assisted in building RAG-based infrastructure and LLMOps in AWS; later promoted to Engineer-I in March 2024 for leading backend development of inference and indexing pipelines, delivering full ML architectures with CI/CD, deploying multiple production applications, and improving RAG efficiency. Recognized with two RISE Awards for timely execution and cross-functional collaboration across AWS, Azure, and Generative AI initiatives.',
+      'Joined as an Azure Foundational Cloud Engineer, where I managed Azure infrastructure, contributed to CI/CD transitions using GitHub Actions, developed reusable Azure Bicep modules, collaborated across teams to enhance customer experience, and maintained comprehensive documentation. Achievements included securing runner-up in a Generative AI Hackathon, automating JIRA/ServiceNow integration, and completing the Azure Fundamentals Certification.',
     ],
   },
   {
@@ -153,7 +160,7 @@ export const EXPERIENCE = [
     link: 'https://procheta.github.io/sprocheta/index.html',
     end: 'July 2023',
     tasks: [
-      'Investigated the ability of Language Models like GPT/Flan-T5 on task-oriented settings like dialogue conversations.',
+      'Investigated the ability of language models such as GPT and Flan-T5 to perform task-oriented dialogue tasks.',
     ],
   },
   {
@@ -164,7 +171,7 @@ export const EXPERIENCE = [
     link: 'https://ics.uci.edu/~jingz31/',
     end: 'Jan 2022',
     tasks: [
-      'Explored the effectiveness of VAES on predicting cancerous transcriptions in Genome Sequences.',
+      'Explored the effectiveness of VAEs in predicting cancer-related transcription patterns in genome sequences.',
     ],
   },
   {
@@ -193,10 +200,16 @@ export const EXPERIENCE = [
 
 export const CERTIFICATIONS = [
   {
+    date: "Apr 2026",
+    title: "Bitcamp 2026: Best Champion of Open Source w/ Featherless - Featherless",
+    url: `https://devpost.com/software/agastiya`,
+    issuer: "Bitcamp 2026",
+  },
+  {
     date: "Nov 2025",
     title: "Technica 2025: The First Light: Best Startup Track Hack Winner",
     url: `https://devpost.com/software/majka`,
-    issuer: "Technica",
+    issuer: "Technica 2025",
   },
   {
     date: "May 2025",
@@ -217,6 +230,24 @@ export const CERTIFICATIONS = [
     issuer: "IIT Guwahati",
   },
   {
+    date: "Sep 2024",
+    title: "RISE Award Winner - Teams - Q3 2024",
+    url: "",
+    issuer: "Eli Lilly and Company",
+  },
+  {
+    date: "Jun 2024",
+    title: "RISE Award Winner - Teams - Q2 2024",
+    url: "",
+    issuer: "Eli Lilly and Company",
+  },
+  {
+    date: "Mar 2024",
+    title: "RISE Award Winner - Individual - Q1 2024",
+    url: "",
+    issuer: "Eli Lilly and Company",
+  },
+  {
     date: "Nov 2023",
     title: "Generative AI with Large Language Models",
     url: "https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
@@ -230,7 +261,7 @@ export const CERTIFICATIONS = [
   },
   {
     date: "Dec 2022",
-    title: " Microsoft Azure Fundamentals",
+    title: "Microsoft Azure Fundamentals",
     url: "https://www.credly.com/badges/125d592d-4b4f-434b-8120-7271ce0e05ca",
     issuer: "Microsoft",
   },
@@ -250,13 +281,13 @@ export const CERTIFICATIONS = [
     date: "Dec 2020",
     title: "Generative Adversarial Networks",
     url: "https://www.coursera.org/account/accomplishments/specialization/certificate/7A4ZUV6RAQPA",
-    issuer: "Specialization - Deeplearning.ai"
+    issuer: "Specialization - DeepLearning.AI"
   },
   {
     date: "July 2020",
     title: "Deep Learning Specialization",
     url: "https://www.coursera.org/account/accomplishments/specialization/certificate/L3KBS2WRKLXQ",
-    issuer: "Specialization - Deeplearning.ai"
+    issuer: "Specialization - DeepLearning.AI"
   },
   {
     date: "Jun 2020",
@@ -272,25 +303,25 @@ export const CERTIFICATIONS = [
   },
   {
     date: 'May 2021',
-    title: 'Mathematics in Machine Learning : Principal Component Analysis',
+    title: 'Mathematics in Machine Learning: Principal Component Analysis',
     url: 'https://www.coursera.org/account/accomplishments/certificate/FZ62GUT2W9SH',
     issuer: 'Imperial College London'
   },
   {
     date: 'May 2021',
-    title: 'Mathematics in Machine Learning : Multi-variate Calculus',
+    title: 'Mathematics in Machine Learning: Multivariate Calculus',
     url: 'https://www.coursera.org/account/accomplishments/certificate/34MJUPARCKK3',
     issuer: 'Imperial College London'
   },
   {
     date: 'Apr 2021',
-    title: 'Mathematics for Machine Learning : Linear Algebra',
+    title: 'Mathematics for Machine Learning: Linear Algebra',
     url: 'https://www.coursera.org/account/accomplishments/certificate/ZQ65HFFTW5MJ',
     issuer: 'Imperial College London',
   },
   {
     date: 'Apr 2021',
-    title: 'Financial Planning for young adults',
+    title: 'Financial Planning for Young Adults',
     url: 'https://www.coursera.org/account/accomplishments/certificate/4Z64M65TSK2R',
     issuer: 'University of Illinois',
   },
@@ -298,25 +329,25 @@ export const CERTIFICATIONS = [
     date: 'Mar 2021',
     title: 'Problem Solving with Excel',
     url: 'https://www.coursera.org/account/accomplishments/certificate/UEB78RU7TPA3',
-    issuer: 'PWC',
+    issuer: 'PwC',
   },
   {
     date: 'Dec 2020',
     title: 'Build Better Generative Adversarial Networks (GANs)',
     url: 'https://www.coursera.org/account/accomplishments/certificate/7DMAUT934VA6',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Dec 2020',
     title: 'Apply Generative Adversarial Networks (GANs)',
     url: 'https://www.coursera.org/account/accomplishments/certificate/6VPWB7Q4HWEX',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Dec 2020',
     title: 'Build Basic Generative Adversarial Networks (GANs)',
     url: 'https://www.coursera.org/account/accomplishments/certificate/6ABG4X5XXS6B',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Dec 2020',
@@ -334,7 +365,7 @@ export const CERTIFICATIONS = [
     date: 'Dec 2020',
     title: 'Sequences, Time Series and Prediction',
     url: 'https://www.coursera.org/account/accomplishments/certificate/4AD8MU8D6HNN',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Nov 2020',
@@ -346,49 +377,49 @@ export const CERTIFICATIONS = [
     date: 'Nov 2020',
     title: 'Data-driven Decision Making',
     url: 'https://www.coursera.org/account/accomplishments/certificate/QGPUSARQ7YPA',
-    issuer: 'PWC',
+    issuer: 'PwC',
   },
   {
     date: 'Nov 2020',
     title: 'Data Visualization with Advanced Excel',
     url: 'https://www.coursera.org/account/accomplishments/certificate/LCSJ7U8BDRCS',
-    issuer: 'PWC',
+    issuer: 'PwC',
   },
   {
     date: 'Sep 2020',
     title: 'Convolutional Neural Networks in TensorFlow',
     url: 'https://www.coursera.org/account/accomplishments/certificate/DGQNJVJKGWMU',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Jul 2020',
     title: 'Sequence Models',
     url: 'https://www.coursera.org/account/accomplishments/certificate/ZZTSX7BKNJBB',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Jul 2020',
     title: 'Introduction to Programming with MATLAB',
     url: 'https://www.coursera.org/account/accomplishments/certificate/JA3P53Y6CN9D',
-    issuer: 'Vanderbuilt University',
+    issuer: 'Vanderbilt University',
   },
   {
     date: 'Jun 2020',
     title: 'Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization',
     url: 'https://www.coursera.org/account/accomplishments/certificate/JL9LWMNLT59L',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Jun 2020',
     title: 'Convolutional Neural Networks',
     url: 'https://www.coursera.org/account/accomplishments/certificate/DY22Y5CY74UK',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Jun 2020',
     title: 'Structuring Machine Learning Projects',
     url: 'https://www.coursera.org/account/accomplishments/certificate/NKUCPHNNM78F',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Jun 2020',
@@ -442,13 +473,13 @@ export const CERTIFICATIONS = [
     date: 'May 2020',
     title: 'Neural Networks and Deep Learning',
     url: 'https://www.coursera.org/account/accomplishments/certificate/PL8CW9DR5PLL',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'May 2020',
     title: 'Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning',
     url: 'https://www.coursera.org/account/accomplishments/certificate/WKKTBNCX69QZ',
-    issuer: 'Deeplearning.ai',
+    issuer: 'DeepLearning.AI',
   },
   {
     date: 'Apr 2020',
@@ -512,7 +543,7 @@ export const CERTIFICATIONS = [
   },
   {
     date: 'Feb 2021',
-    title: 'Online Short Term Course on Data Analytics using Python',
+    title: 'Online Short-Term Course on Data Analytics Using Python',
     url: 'https://drive.google.com/file/d/1SCC4qDiZyv_97QGOHYKFy9e8v7VRj4rI/view',
     issuer: 'National Institute of Technology, Warangal',
   },
@@ -554,7 +585,7 @@ export const CERTIFICATIONS = [
   },
   {
     date: 'Dec 2020',
-    title: 'Real-time OCR and Text Detection with Tensorflow, OpenCV and Tesseract',
+    title: 'Real-time OCR and Text Detection with TensorFlow, OpenCV, and Tesseract',
     url: 'https://www.coursera.org/account/accomplishments/certificate/9TU7LRE7NNW4',
     issuer: 'Coursera',
   },
@@ -598,22 +629,29 @@ export const CERTIFICATIONS = [
 
 export const PROJECTS_LIST = [
   {
+    title: 'Routing Fidelity',
+    description: 'Routing Fidelity as a Systems Metric: Characterizing Optimization-Induced Drift in MoEs',
+    link: 'https://github.com/GokuHashira/RoutingDrift',
+    alttext: 'Routing Fidelity as a Systems Metric',
+    image: `${import.meta.env.BASE_URL}RoutingDrift.png`,
+  },
+  {
     title: 'Majka',
-    description: 'Majka is a full-stack companion app that helps new mothers rebuild strength, track their intake answers, and receive AI-assisted guidance.',
+    description: 'Majka is a full-stack companion app that helps new mothers rebuild strength, track intake, and receive AI-assisted guidance.',
     link: 'https://github.com/nydhy/majka',
     alttext: 'Majka - Postpartum Companion',
     image: `${import.meta.env.BASE_URL}Majka.png`,
   },
   {
     title: 'Song Mood Detection using Spotify Dataset',
-    description: 'The project is all about using the music characteristics to determine the mood of the songs.',
+    description: 'This project uses audio features to determine the mood of songs.',
     link: 'https://github.com/GokuHashira/SpotifyProject',
     alttext: 'SongMoodDetection',
     image: `${import.meta.env.BASE_URL}SongMoodDetection.png`,
   },
   {
     title: 'SplitSmart',
-    description: 'An application which helps you keep track of your expenses through Natural Language',
+    description: 'An application that helps you track expenses through natural language.',
     link: 'https://github.com/GokuHashira/GeminiHack',
     alttext: 'SplitSmart',
     image: `${import.meta.env.BASE_URL}SmartSplit.png`,
@@ -627,35 +665,35 @@ export const PROJECTS_LIST = [
   },
   {
     title: 'InstructionLLM-QnA',
-    description: 'Aims on building a LLM that is task specific and helpful in QnA based tasks.',
+    description: 'This project aims to build a task-specific LLM for Q&A-based tasks.',
     link: 'https://github.com/GokuHashira/InstructionLLM-QnA',
     alttext: 'InstructionLLM-QnA',
     image: `${import.meta.env.BASE_URL}InstructionQA.png`,
   },
   {
-    title: 'NITRKL Syllabus bot',
-    description: 'A chatbot-project based on RASA and Python to showcase the syllabus and recommended books for various subjects taught at NITR.',
+    title: 'NITRKL Syllabus Bot',
+    description: 'A chatbot project based on RASA and Python that showcases the syllabus and recommended books for various subjects taught at NITR.',
     link: 'https://github.com/GokulParzival/nitrkl-syllabus-bot/blob/main/README.md',
-    alttext: 'NITRKL Syllabus bot',
+    alttext: 'NITRKL Syllabus Bot',
     image: `${import.meta.env.BASE_URL}nitri_logo.png`,
   },
   {
-    title: 'Detecting the best waterfall spot in TamilNadu to set up a restuarant',
-    description: 'This project involves assisting a business person or a restaurant chain to find the most potential place to set up a new restaurant or branch, respectively, near any waterfall in Tamilnadu.',
+    title: 'Detecting the Best Waterfall Spot in Tamil Nadu to Set Up a Restaurant',
+    description: 'This project helps a business owner or restaurant chain find the most suitable location to set up a new restaurant or branch near waterfalls in Tamil Nadu.',
     link: 'https://github.com/GokulParzival/Detecting-the-best-waterfalls-spot-in-Tamilnadu-to-set-up-a-restaurant/blob/main/Detecting%20the%20best%20waterfalls%20spot%20in%20Tamilnadu%20to%20set%20up%20a%20restaurant.ipynb',
-    alttext: 'Detecting the best waterfall spot in TamilNadu to set up a restuarant',
+    alttext: 'Detecting the best waterfall spot in Tamil Nadu to set up a restaurant',
     image: `${import.meta.env.BASE_URL}Map.png`,
   },
   {
-    title: 'Exploratory Data Analysis on Student Performances',
-    description: "This project involves an in-depth analysis of the student's performances based on various factors that include Gender, Ethnicity, Parental level of education, Lunch and Test preparation course.",
+    title: 'Exploratory Data Analysis on Student Performance',
+    description: "This project analyzes student performance across factors such as gender, ethnicity, parental level of education, lunch, and test preparation course.",
     link: 'https://github.com/GokulParzival/Mini-Project-on-Data-Visualization/blob/master/Data%20Science%20Mini%20Project.ipynb',
-    alttext: 'Exploratory Data Analysis on Student Performances',
+    alttext: 'Exploratory Data Analysis on Student Performance',
     image: `${import.meta.env.BASE_URL}data_analyst.jpg`,
   },
   {
     title: 'Price Estimation of Used Cars',
-    description: 'Prediction of the price of used cars based on attributes like location, lifetime etc. and training them on basic ML models.',
+    description: 'Predicts used-car prices based on attributes such as location and vehicle age using basic ML models.',
     link: 'https://github.com/GokulParzival/Price-Estimation-of-Used-Cars',
     alttext: 'Price Estimation of Used Cars',
     image: `${import.meta.env.BASE_URL}used_car.jpg`,
@@ -668,36 +706,52 @@ export const SKILLS = [
     skill: "Python",
   },
   {
-    link:"https://drive.google.com/file/d/1EVPHWUTToqSwb5pwx0mWXwAwji-p5FpX/view?usp=sharing",
-    skill: "C++",
-  },
-  {
-    link:"https://learn.deeplearning.ai/accomplishments/1cfdf90c-b92c-4fa0-8405-4f43794dc6a8",
-    skill: "Langchain",
-  },
-  {
-    link:"https://www.coursera.org/account/accomplishments/certificate/DGQNJVJKGWMU",
-    skill: "Tensorflow",
-  },
-  {
-    link:"https://www.coursera.org/account/accomplishments/certificate/WJBMNXBG4YBE",
-    skill: "Machine Learning",
-  },
-  {
-    link:"https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
-    skill: "Large Learning Models",
-  },
-  {
-    link:`${import.meta.env.BASE_URL}AUKBC_Certificate.pdf`,
-    skill: "Geenrative AI",
-  },
-  {
     link:"https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
     skill: "AWS",
   },
   {
     link:"https://www.credly.com/badges/125d592d-4b4f-434b-8120-7271ce0e05ca",
     skill: "Azure",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/B25S5SW3VYDK",
+    skill: "Large Language Models",
+  },
+  {
+    link:`${import.meta.env.BASE_URL}AUKBC_Certificate.pdf`,
+    skill: "Generative AI",
+  },
+  {
+    link:"https://learn.deeplearning.ai/accomplishments/1cfdf90c-b92c-4fa0-8405-4f43794dc6a8",
+    skill: "LangChain",
+  },
+  {
+    link:"",
+    skill: "PyTorch",
+  },
+  {
+    link:"",
+    skill: "Hugging Face",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/DGQNJVJKGWMU",
+    skill: "TensorFlow",
+  },
+  {
+    link:"https://www.coursera.org/account/accomplishments/certificate/WJBMNXBG4YBE",
+    skill: "Machine Learning",
+  },
+  {
+    link:"",
+    skill: "SQL",
+  },
+  {
+    link:"",
+    skill: "MongoDB",
+  },
+  {
+    link:"",
+    skill: "DevOps",
   },
   {
     link:"",
@@ -709,10 +763,14 @@ export const SKILLS = [
   },
   {
     link:"",
-    skill: "Github Actions",
+    skill: "GitHub Actions",
   },
   {
     link:"",
     skill: "DevOps",
+  },
+  {
+    link:"https://drive.google.com/file/d/1EVPHWUTToqSwb5pwx0mWXwAwji-p5FpX/view?usp=sharing",
+    skill: "C++",
   }
 ]

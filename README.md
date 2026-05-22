@@ -36,13 +36,7 @@ To install and run the project locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/GokuHashira/gokul-astro-project
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd astro-portfolio
+   git clone https://github.com/GokuHashira/gokuhashira.github.io.git
    ```
 
 3. Install the dependencies:
@@ -79,12 +73,6 @@ A brief overview of the project structure:
 - **SEO**: Optimize your portfolio for search engines by adding meta tags and relevant content.
 - **Performance**: Use modern web development practices to ensure optimal performance, such as lazy loading images and minimizing CSS/JS.
 - **Responsive Design**: Make sure your portfolio looks good on devices of all sizes, from mobile to desktop screens.
-
-This project use Contentful to fetch data from the API. and load your projects section, if you want to use your contentful data add variables to your .env file.
-
-## Contributions
-
-Contributions are welcome! If you have ideas or improvements, please open an issue or submit a pull request.
 
 ## License
 

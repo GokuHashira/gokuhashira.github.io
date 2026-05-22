@@ -1,0 +1,26 @@
+---
+import Card from '../Card.astro'
+import { Button } from '../ui/button'
+import { PUBLICATIONS } from '../../lib/constants'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Publications">
+  <div class="mt-2 space-y-4">
+    {
+      PUBLICATIONS.slice(0, 3).map((pub) => (
+        <div>
+          <h3 class="text-lg font-semibold">{pub.title}</h3>
+          <a class="text-sm text-primary" href={pub.url ?? ''}>
+            {pub.venue}
+          </a>
+          <p class="text-sm text-gray-600">
+            {pub.date}
+          </p>
+        </div>
+      ))
+    }
+    <a href="/publications">
+      <Button variant="link" className="pl-0"> View More </Button>
+    </a>
+  </div>
+</Card>
