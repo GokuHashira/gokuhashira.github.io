@@ -2,7 +2,7 @@
 import Card from '../Card.astro'
 import { Button } from '../ui/button'
 import { LINKS } from '../../lib/constants'
-import { Linkedin, Github, Mail } from 'lucide-react'
+import { Linkedin, Github, Mail, GraduationCap } from 'lucide-react'
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-1">
@@ -41,6 +41,12 @@ import { Linkedin, Github, Mail } from 'lucide-react'
           <Button size="icon">
             <Mail />
             <span class="sr-only">Email contact</span>
+          </Button>
+        </a>
+        <a href={LINKS.scholar} aria-label="google scholar profile" target="_blank" rel="noopener noreferrer">
+          <Button aria-label="google scholar profile" size="icon">
+            <GraduationCap />
+            <span class="sr-only">Google Scholar Profile</span>
           </Button>
         </a>
       </div>

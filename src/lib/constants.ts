@@ -10,6 +10,7 @@ export const LINKS = {
   github: 'https://github.com/GokuHashira',
   linkedin: 'https://www.linkedin.com/in/gokulakannan-sakthivel',
   mail: 'mailto:gkannan.sakthi03@gmail.com',
+  scholar: 'https://scholar.google.com/citations?user=9Fsh1l0AAAAJ&hl=en',
 }
 
 // Global
@@ -64,6 +65,14 @@ export const SEARCH: Page = {
 
 export const PUBLICATIONS = [
   {
+    title: 'Launch-Bound and Substitutable: Why Three Inference Optimizations Fail to Pay Off in Mixture-of-Experts Models',
+    venue: 'arXiv',
+    url: 'https://arxiv.org/abs/2608.26612',
+    date: 'Aug 2026',
+    summary:
+      'Standard inference optimizations underperform on Mixture-of-Experts (MoE) models. Evaluating three techniques across multiple MoE architectures, fused Triton kernels reach 5.6x–9.0x speedups in isolation yet only 0.999x end to end as kernel launch overhead dominates; INT4 quantization causes minimal quality loss despite swapping experts, suggesting experts are substitutable rather than specialized; and removing torch.compile graph breaks paradoxically slows execution. Together these results show that routing fidelity and output quality are separable optimization objectives in MoE inference.',
+  },
+  {
     title: 'Detecting and quantifying overparametrization in RNA language models with REDIAL',
     venue: 'bioRxiv',
     url: 'https://www.biorxiv.org/content/10.64898/2026.05.11.724344v1',
@@ -84,7 +93,7 @@ export const STUDIES = [
     start: 'Aug 2025',
     end: 'Dec 2026',
     details:[
-      'Relevant Coursework: Probability and Statistics, Principles of Data Science, Principles of Machine Learning'
+      'Relevant Coursework: Probability and Statistics, Principles of Data Science, Principles of Machine Learning, Algorithms and Data Structures, Computing for ML and Optimization'
     ]
   },
   {
@@ -96,7 +105,11 @@ export const STUDIES = [
     end: 'Jun 2022',
     details:[
       'Relevant Coursework: Mathematics I, II (ODEs, Matrix Theory, Vector and Differential Calculus), basic programming in C, Chemical Engineering Mathematics, Numerical Analysis'
-    ]
+    ],
+    thesis: {
+      title: 'B.Tech. Thesis: Machine Learning and Deep Learning on Vapour Liquid Equilibrium Prediction of Carbon Dioxide over Amines',
+      url: 'https://eapplication.nitrkl.ac.in/nitris/docs/Thesis%20Upload/2021-22/Spring/9309.pdf',
+    }
   }
 ]
 
@@ -104,12 +117,16 @@ export const EXPERIENCE = [
   {
     company: 'Institute for Physical Science and Technology, UMD',
     location: 'College Park, USA',
-    position: 'Graduate Student Assistant',
+    position: 'Research Engineer',
     start: 'Oct 2025',
     link: 'https://sites.google.com/site/pratyushtiwary/group#h.p_FymIi7P6-8JC',
-    end: 'Ongoing',
+    end: 'Present',
     tasks: [
-      'Working on AI for RNA.',
+      'As Lead Engineer, built the dashboard and architected the frontend of an RNA structure-prediction platform, shipping it end-to-end from job submission to results delivery, drawing 200+ users and 600+ folding jobs in its first week.',
+      'Migrated folding workloads off a shared university HPC queue onto a dedicated SLURM cluster on AWS with an asynchronous SQS dispatch pipeline, running 20 jobs concurrently and eliminating queue wait.',
+      'Architected the full AWS estate as IaC (Terraform: ECS Fargate, Lambda, SQS, S3) with a Dockerized CI/CD pipeline (GitHub Actions → ECR → ECS).',
+      'Advised by Prof. Pratyush Tiwary, training RNA language models from scratch on unsupervised Masked Language Modeling (MLM) objectives; co-developed REDIAL to score model quality without labeled structures, exposing over-parameterization in existing models.',
+      'Training and finetuning RNA language models for more accurate contact maps and a better embedding space to ease downstream tasks.',
     ],
   },
   {
@@ -629,10 +646,10 @@ export const CERTIFICATIONS = [
 
 export const PROJECTS_LIST = [
   {
-    title: 'Routing Fidelity',
-    description: 'Routing Fidelity as a Systems Metric: Characterizing Optimization-Induced Drift in MoEs',
-    link: 'https://github.com/GokuHashira/RoutingDrift',
-    alttext: 'Routing Fidelity as a Systems Metric',
+    title: "Launch-Bound and Substitutable: Why Three MoE Inference Optimizations Don't Pay",
+    description: 'An empirical study showing why three common MoE inference optimizations — quantization, custom Triton kernels, and torch.compile — fail to pay off across OLMoE, DeepSeek-V2-Lite, and Qwen3.',
+    link: 'https://github.com/GokuHashira/moe-ceilings',
+    alttext: "Launch-Bound and Substitutable: Why Three MoE Inference Optimizations Don't Pay",
     image: `${import.meta.env.BASE_URL}RoutingDrift.png`,
   },
   {
@@ -669,6 +686,13 @@ export const PROJECTS_LIST = [
     link: 'https://github.com/GokuHashira/InstructionLLM-QnA',
     alttext: 'InstructionLLM-QnA',
     image: `${import.meta.env.BASE_URL}InstructionQA.png`,
+  },
+  {
+    title: 'B.Tech. Thesis: ML & DL for Vapour Liquid Equilibrium Prediction',
+    description: 'Machine Learning and Deep Learning on Vapour Liquid Equilibrium Prediction of Carbon Dioxide over Amines.',
+    link: 'https://eapplication.nitrkl.ac.in/nitris/docs/Thesis%20Upload/2021-22/Spring/9309.pdf',
+    alttext: 'B.Tech. Thesis: ML & DL for Vapour Liquid Equilibrium Prediction',
+    image: `${import.meta.env.BASE_URL}thesis_vle.png`,
   },
   {
     title: 'NITRKL Syllabus Bot',

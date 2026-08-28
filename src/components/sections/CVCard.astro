@@ -4,6 +4,7 @@ import Card from '../Card.astro'
 import { Button } from '../ui/button'
 
 const PDF = `${import.meta.env.BASE_URL}Gokul_ResumeUS.pdf`
+const PREVIEW = `${import.meta.env.BASE_URL}Gokul_Resume_preview.png`
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="CV">
@@ -12,8 +13,37 @@ const PDF = `${import.meta.env.BASE_URL}Gokul_ResumeUS.pdf`
       class="card card-compact md:w-112 lg:w-128 w-96 gap-2 border-[oklch(var(--p))] transition-all"
     >
       <figure>
-        <object data={PDF} type="application/pdf" width="100%"></object>
+        <div id="pdf-preview" class="group relative w-full overflow-hidden rounded-md border border-[oklch(var(--p))]">
+          <img
+            src={PREVIEW}
+            alt="Resume preview"
+            loading="lazy"
+            decoding="async"
+            class="w-full"
+          />
+          <button
+            id="load-pdf"
+            type="button"
+            class="absolute inset-0 flex items-end justify-center bg-black/0 pb-4 opacity-0 transition-all group-hover:bg-black/40 group-hover:opacity-100"
+          >
+            <span class="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground">
+              Open full resume 📄
+            </span>
+          </button>
+        </div>
       </figure>
+      <script is:inline define:vars={{ PDF }}>
+        document.getElementById('load-pdf')?.addEventListener('click', () => {
+          const container = document.getElementById('pdf-preview')
+          if (!container) return
+          const obj = document.createElement('object')
+          obj.data = PDF
+          obj.type = 'application/pdf'
+          obj.width = '100%'
+          obj.style.minHeight = '400px'
+          container.replaceChildren(obj)
+        })
+      </script>
       <div class="mt-4 flex flex-col gap-2">
         <p class="text-sm text-muted-foreground">
           Download my resume here 👇
