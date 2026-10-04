@@ -93,7 +93,7 @@ export const STUDIES = [
     start: 'Aug 2025',
     end: 'May 2027',
     details:[
-      'Relevant Coursework: Probability and Statistics, Principles of Data Science, Principles of Machine Learning, Algorithms and Data Structures, Computing for ML and Optimization'
+      'Relevant Coursework: Principles of Machine Learning, Generative AI Agents, Computing for ML'
     ]
   },
   {
