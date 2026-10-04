@@ -91,7 +91,7 @@ export const STUDIES = [
     link: 'https://cmns.umd.edu/graduate/science-academy/machine-learning',
     date: '2025 - 2026',
     start: 'Aug 2025',
-    end: 'Dec 2026',
+    end: 'May 2027',
     details:[
       'Relevant Coursework: Probability and Statistics, Principles of Data Science, Principles of Machine Learning, Algorithms and Data Structures, Computing for ML and Optimization'
     ]
