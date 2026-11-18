@@ -1,4 +1,4 @@
-import type { Site, Page } from './types'
+import type { Page } from './types'
 
 export const loaderAnimation = [
   '.loader',
@@ -10,15 +10,7 @@ export const LINKS = {
   github: 'https://github.com/GokuHashira',
   linkedin: 'https://www.linkedin.com/in/gokulakannan-sakthivel',
   mail: 'mailto:gkannan.sakthi03@gmail.com',
-  scholar: 'https://scholar.google.com/citations?user=9Fsh1l0AAAAJ&hl=en',
-}
-
-// Global
-export const SITE: Site = {
-  TITLE: 'Astro Sphere',
-  DESCRIPTION:
-    'Welcome to Astro Sphere, a portfolio and blog for designers and developers.',
-  AUTHOR: 'Mark Horn',
+  scholar: 'https://scholar.google.com/citations?user=WqVjQvsAAAAJ&hl=en&oi=ao',
 }
 
 // Work Page
@@ -43,24 +35,6 @@ export const CERT: Page = {
 export const PUBS: Page = {
   TITLE: 'Publications',
   DESCRIPTION: 'My research publications',
-}
-
-// Blog Page
-export const BLOG: Page = {
-  TITLE: 'Blog',
-  DESCRIPTION: 'Writing on topics I am passionate about.',
-}
-
-// Projects Page
-export const PROJECTS: Page = {
-  TITLE: 'Projects',
-  DESCRIPTION: 'Recent projects I have worked on.',
-}
-
-// Search Page
-export const SEARCH: Page = {
-  TITLE: 'Search',
-  DESCRIPTION: 'Search all posts and projects by keyword.',
 }
 
 export const PUBLICATIONS = [
@@ -175,7 +149,7 @@ export const EXPERIENCE = [
     position: 'Intern - Deep Learning Researcher',
     start: 'Apr 2023',
     link: 'https://procheta.github.io/sprocheta/index.html',
-    end: 'July 2023',
+    end: 'Jul 2023',
     tasks: [
       'Investigated the ability of language models such as GPT and Flan-T5 to perform task-oriented dialogue tasks.',
     ],
@@ -216,6 +190,12 @@ export const EXPERIENCE = [
 ]
 
 export const CERTIFICATIONS = [
+  {
+    date: "Nov 2026",
+    title: "AI for Small Business Hack-a-thon: Runner-Up ($2,500) - knots",
+    url: "https://lnkd.in/p/dCjTZdtq",
+    issuer: "UMD Robert H. Smith School of Business",
+  },
   {
     date: "Apr 2026",
     title: "Bitcamp 2026: Best Champion of Open Source w/ Featherless - Featherless",
@@ -289,34 +269,22 @@ export const CERTIFICATIONS = [
     issuer: "ICAgile"
   },
   {
+    date: 'Oct 2021 - Jul 2022',
+    title: 'Foundations of Modern Machine Learning',
+    url: 'https://drive.google.com/file/d/1C-4Uw6dhaGik9G584lxwUhZx0GDnOLmE/view?usp=sharing',
+    issuer: 'iHub Data - IIIT Hyderabad',
+  },
+  {
+    date: '2020-2022',
+    title: 'Credly Badges',
+    url: 'https://www.credly.com/users/gokulakannan-sakthivel/badges',
+    issuer: 'Credly',
+  },
+  {
     date: "May 2021",
     title: "Mathematics in Machine Learning",
     url: "https://www.coursera.org/account/accomplishments/specialization/certificate/NDCGVMJ9W8WL",
     issuer: "Specialization - Imperial College London"
-  },
-  {
-    date: "Dec 2020",
-    title: "Generative Adversarial Networks",
-    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/7A4ZUV6RAQPA",
-    issuer: "Specialization - DeepLearning.AI"
-  },
-  {
-    date: "July 2020",
-    title: "Deep Learning Specialization",
-    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/L3KBS2WRKLXQ",
-    issuer: "Specialization - DeepLearning.AI"
-  },
-  {
-    date: "Jun 2020",
-    title: "IBM Data Science Specialization",
-    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/ZUA7K9WWR6VE",
-    issuer: "Specialization - IBM"
-  },
-  {
-    date: "Apr 2020",
-    title: "Data Engineering with Google Cloud Specialization",
-    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/KK5Q5AFFUWJ7",
-    issuer: "Specialization - Google Cloud"
   },
   {
     date: 'May 2021',
@@ -347,6 +315,30 @@ export const CERTIFICATIONS = [
     title: 'Problem Solving with Excel',
     url: 'https://www.coursera.org/account/accomplishments/certificate/UEB78RU7TPA3',
     issuer: 'PwC',
+  },
+  {
+    date: 'Feb 2021',
+    title: 'Online Short-Term Course on Data Analytics Using Python',
+    url: 'https://drive.google.com/file/d/1SCC4qDiZyv_97QGOHYKFy9e8v7VRj4rI/view',
+    issuer: 'National Institute of Technology, Warangal',
+  },
+  {
+    date: '2021',
+    title: 'Google Cloud Skills Boost (Qwiklabs) Profile - 2021',
+    url: 'https://www.cloudskillsboost.google/public_profiles/fd9616ee-3e1b-425a-a806-eda63181c6a3',
+    issuer: 'Google Cloud',
+  },
+  {
+    date: '2020-2021',
+    title: 'Google Cloud Skills Boost (Qwiklabs) Profile - 2020-2021',
+    url: 'https://www.cloudskillsboost.google/public_profiles/29c19523-d5a6-43b5-a332-51560434fbc4',
+    issuer: 'Google Cloud',
+  },
+  {
+    date: "Dec 2020",
+    title: "Generative Adversarial Networks",
+    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/7A4ZUV6RAQPA",
+    issuer: "Specialization - DeepLearning.AI"
   },
   {
     date: 'Dec 2020',
@@ -385,6 +377,60 @@ export const CERTIFICATIONS = [
     issuer: 'DeepLearning.AI',
   },
   {
+    date: 'Dec 2020',
+    title: 'Movie Recommendation System using Collaborative Filtering',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/64LV574PW6ED',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Building Recommendation System Using MXNET on AWS Sagemaker',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/HFQJ42HR9XXH',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Traffic Sign Classification Using Deep Learning in Python/Keras',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/ANXLE6JBRVTX',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Real-time OCR and Text Detection with TensorFlow, OpenCV, and Tesseract',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/9TU7LRE7NNW4',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Create Your First Web App with Python and Flask',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/L9AFRBMX9WY8',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Web Scraping with Python + BeautifulSoup',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/63PLPW27G7SL',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Video Basics with OpenCV and Python',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/WAQA2AJ3PS9E',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Computer Vision - Object Tracking with OpenCV and Python',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/R2E8RD6N9TCZ',
+    issuer: 'Coursera',
+  },
+  {
+    date: 'Dec 2020',
+    title: 'Computer Vision - Image Basics with OpenCV and Python',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/NZGHRRXXLBAH',
+    issuer: 'Coursera',
+  },
+  {
     date: 'Nov 2020',
     title: 'Introduction to Git and GitHub',
     url: 'https://www.coursera.org/account/accomplishments/certificate/S8XQTRJGA86K',
@@ -403,10 +449,22 @@ export const CERTIFICATIONS = [
     issuer: 'PwC',
   },
   {
+    date: 'Nov 2020',
+    title: 'Postman - Intro to APIs',
+    url: 'https://www.coursera.org/account/accomplishments/certificate/XS9J393CRJ4A',
+    issuer: 'Coursera',
+  },
+  {
     date: 'Sep 2020',
     title: 'Convolutional Neural Networks in TensorFlow',
     url: 'https://www.coursera.org/account/accomplishments/certificate/DGQNJVJKGWMU',
     issuer: 'DeepLearning.AI',
+  },
+  {
+    date: "Jul 2020",
+    title: "Deep Learning Specialization",
+    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/L3KBS2WRKLXQ",
+    issuer: "Specialization - DeepLearning.AI"
   },
   {
     date: 'Jul 2020',
@@ -419,6 +477,12 @@ export const CERTIFICATIONS = [
     title: 'Introduction to Programming with MATLAB',
     url: 'https://www.coursera.org/account/accomplishments/certificate/JA3P53Y6CN9D',
     issuer: 'Vanderbilt University',
+  },
+  {
+    date: "Jun 2020",
+    title: "IBM Data Science Specialization",
+    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/ZUA7K9WWR6VE",
+    issuer: "Specialization - IBM"
   },
   {
     date: 'Jun 2020',
@@ -499,6 +563,12 @@ export const CERTIFICATIONS = [
     issuer: 'DeepLearning.AI',
   },
   {
+    date: "Apr 2020",
+    title: "Data Engineering with Google Cloud Specialization",
+    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/KK5Q5AFFUWJ7",
+    issuer: "Specialization - Google Cloud"
+  },
+  {
     date: 'Apr 2020',
     title: 'AWS Computer Vision: Getting Started with GluonCV',
     url: 'https://www.coursera.org/account/accomplishments/certificate/TYXLVBABHGRX',
@@ -551,100 +621,17 @@ export const CERTIFICATIONS = [
     title: 'Google Cloud Platform Big Data and Machine Learning Fundamentals',
     url: 'https://www.coursera.org/account/accomplishments/certificate/JLJE4XUHEQZQ',
     issuer: 'Google Cloud',
-  },
-  {
-    date: 'Oct 2021 - July 2022',
-    title: 'Foundations of Modern Machine Learning',
-    url: 'https://drive.google.com/file/d/1C-4Uw6dhaGik9G584lxwUhZx0GDnOLmE/view?usp=sharing',
-    issuer: 'iHub Data - IIIT Hyderabad',
-  },
-  {
-    date: 'Feb 2021',
-    title: 'Online Short-Term Course on Data Analytics Using Python',
-    url: 'https://drive.google.com/file/d/1SCC4qDiZyv_97QGOHYKFy9e8v7VRj4rI/view',
-    issuer: 'National Institute of Technology, Warangal',
-  },
-  {
-    date: '2020-2022',
-    title: 'Credly Badges',
-    url: 'https://www.credly.com/users/gokulakannan-sakthivel/badges',
-    issuer: 'Credly',
-  },
-  {
-    date: '2021',
-    title: 'Qwiklabs - GCP',
-    url: 'https://www.cloudskillsboost.google/public_profiles/fd9616ee-3e1b-425a-a806-eda63181c6a3',
-    issuer: 'Google Cloud',
-  },
-  {
-    date: '2020-2021',
-    title: 'Qwiklabs - GCP',
-    url: 'https://www.cloudskillsboost.google/public_profiles/29c19523-d5a6-43b5-a332-51560434fbc4',
-    issuer: 'Google Cloud',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Movie Recommendation System using Collaborative Filtering',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/64LV574PW6ED',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Building Recommendation System Using MXNET on AWS Sagemaker',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/HFQJ42HR9XXH',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Traffic Sign Classification Using Deep Learning in Python/Keras',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/ANXLE6JBRVTX',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Real-time OCR and Text Detection with TensorFlow, OpenCV, and Tesseract',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/9TU7LRE7NNW4',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Create Your First Web App with Python and Flask',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/L9AFRBMX9WY8',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Web Scraping with Python + BeautifulSoup',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/63PLPW27G7SL',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Video Basics with OpenCV and Python',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/WAQA2AJ3PS9E',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Computer Vision - Object Tracking with OpenCV and Python',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/R2E8RD6N9TCZ',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Dec 2020',
-    title: 'Computer Vision - Image Basics with OpenCV and Python',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/NZGHRRXXLBAH',
-    issuer: 'Coursera',
-  },
-  {
-    date: 'Nov 2020',
-    title: 'Postman - Intro to APIs',
-    url: 'https://www.coursera.org/account/accomplishments/certificate/XS9J393CRJ4A',
-    issuer: 'Coursera',
   }
 ]
 
 export const PROJECTS_LIST = [
+  {
+    title: 'knots',
+    description: 'An "Angie\'s List for AI tools" that matches small and rural businesses to vetted AI tools, with trust reports and free setup help. Runner-Up at the UMD AI for Small Business Hack-a-thon.',
+    link: 'https://lnkd.in/p/dCjTZdtq',
+    alttext: 'knots - AI tools for Main Street businesses',
+    image: `${import.meta.env.BASE_URL}knots.jpg`,
+  },
   {
     title: "Launch-Bound and Substitutable: Why Three MoE Inference Optimizations Don't Pay",
     description: 'An empirical study showing why three common MoE inference optimizations — quantization, custom Triton kernels, and torch.compile — fail to pay off across OLMoE, DeepSeek-V2-Lite, and Qwen3.',
@@ -664,14 +651,14 @@ export const PROJECTS_LIST = [
     description: 'This project uses audio features to determine the mood of songs.',
     link: 'https://github.com/GokuHashira/SpotifyProject',
     alttext: 'SongMoodDetection',
-    image: `${import.meta.env.BASE_URL}SongMoodDetection.png`,
+    image: `${import.meta.env.BASE_URL}SongMoodDetection.jpg`,
   },
   {
     title: 'SplitSmart',
     description: 'An application that helps you track expenses through natural language.',
     link: 'https://github.com/GokuHashira/GeminiHack',
     alttext: 'SplitSmart',
-    image: `${import.meta.env.BASE_URL}SmartSplit.png`,
+    image: `${import.meta.env.BASE_URL}SmartSplit.jpg`,
   },
   {
     title: 'AIEvaluationTool',
@@ -685,7 +672,7 @@ export const PROJECTS_LIST = [
     description: 'This project aims to build a task-specific LLM for Q&A-based tasks.',
     link: 'https://github.com/GokuHashira/InstructionLLM-QnA',
     alttext: 'InstructionLLM-QnA',
-    image: `${import.meta.env.BASE_URL}InstructionQA.png`,
+    image: `${import.meta.env.BASE_URL}InstructionQA.jpg`,
   },
   {
     title: 'B.Tech. Thesis: ML & DL for Vapour Liquid Equilibrium Prediction',
@@ -788,10 +775,6 @@ export const SKILLS = [
   {
     link:"",
     skill: "GitHub Actions",
-  },
-  {
-    link:"",
-    skill: "DevOps",
   },
   {
     link:"https://drive.google.com/file/d/1EVPHWUTToqSwb5pwx0mWXwAwji-p5FpX/view?usp=sharing",

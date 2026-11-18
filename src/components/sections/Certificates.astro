@@ -10,9 +10,13 @@ import { CERTIFICATIONS } from '../../lib/constants'
       CERTIFICATIONS.slice(0, 3).map((cft) => (
         <div>
           <h3 class="text-lg font-semibold">{cft.title}</h3>
-          <a class="text-sm text-primary" href={cft.url ?? ''}>
-            {cft.issuer}
-          </a>
+          {cft.url ? (
+            <a class="text-sm text-primary" href={cft.url} target="_blank" rel="noopener noreferrer">
+              {cft.issuer}
+            </a>
+          ) : (
+            <p class="text-sm text-muted-foreground">{cft.issuer}</p>
+          )}
           <p class="text-sm text-gray-600">
             {cft.date}
           </p>

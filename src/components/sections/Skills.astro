@@ -8,9 +8,13 @@ import { SKILLS } from '../../lib/constants'
   <div class="mt-2 flex w-full flex-wrap items-center justify-center gap-2">
     {
       SKILLS.map((skills) => (
-        <a href={skills.link} target="__blank">
+        skills.link ? (
+          <a href={skills.link} target="_blank" rel="noopener noreferrer">
+            <Badge variant="outline">{skills.skill}</Badge>
+          </a>
+        ) : (
           <Badge variant="outline">{skills.skill}</Badge>
-        </a>
+        )
       ))
     }
   </div>
